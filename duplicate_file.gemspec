@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "duplicate_file"
   spec.version       = DuplicateFile::VERSION
   spec.authors       = ["TakuKobayshi"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.email         = ["keep_slimbody@yahoo.co.jp"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{It is ssearch and delete duplicate files.}
+  spec.description   = %q{It is ssearch and delete duplicate files.}
   spec.homepage      = "https://github.com/TakuLibraries/DuplicateFile"
   spec.license       = "MIT"
 
