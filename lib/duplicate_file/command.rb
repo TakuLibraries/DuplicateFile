@@ -13,9 +13,11 @@ module DuplicateFile
       checksum_filepath_group = group_by_checksum(root_path)
       checksum_filepath_group.each do |checksum, filepathes|
         dupricate_pathes = filepathes[1..(filepathes.size - 1)] || []
+        next if dupricate_pathes.empty?
         dupricate_pathes.each do |path|
           File.delete(path)
         end
+        puts "original file:#{filepathes.first} delete file:#{dupricate_pathes.join(",")}"
       end
     end
 
