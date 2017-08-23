@@ -1,4 +1,6 @@
+require "duplicate_file/command"
 require "duplicate_file/version"
+
 module DuplicateFile
   def self.group_by_checksum(root_path)
     all_files = Dir.glob(root_path + "**/*").select{|path| File.file?(path) }
